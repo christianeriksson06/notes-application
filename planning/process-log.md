@@ -96,16 +96,26 @@ tror det
 
 ---
 
-## [Datum: ] - Del 4: Implementation
+## [Datum: 2025-09-14] - Del 4: Implementation
 
 ### Utvecklingsframsteg:
-- 
+- Skapat 3 sidor: index.html (lista/sök), create.html (skapa) och edit.html för redigering/radering
+- Delat upp JS i create.js, edit.js, storage.js och ui.js
+- Implementerat MVP-flöden: skapa note, söka, redigera, radera
+- UI: mobil först CSS, FAB centrerad i botten (flyttas till höger på större skärmar), respons regler i mobile.css
 
 ### Buggar jag stötte på:
-- 
+- Beskrivningen på anteckningen visades inte, fixade genom att lägga till '<p class="body">' för att visa allt
+- Odaterade notes syntes inte, hamnade inte i någon grupp. Lösningen var att skapa en ny sektion No date
+- När man matade in super sjuka inmatningar som var hur långa som helst så stack texten åt höger, så då tvingade jag radbrytning och stoppade horisontell overflow
+
 
 ### Lärdomar:
-- 
+- Undrade varför sökfältet visade ett blått X till höger, det visade sig vara inbyggd i webbläsaren och inte går att ändra
+- Separation av ansvar i JS gör felsökning och utbyggnad 100 gånger enklare
+- Sanitera användartext (escapeHtml) för att undvika cross site scripting när man använder innerHTML
+- UX för odaterat innehåll, egen grupp ("No date") så att inget "försvinner"
+
 
 ---
 
