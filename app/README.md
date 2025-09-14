@@ -7,7 +7,7 @@ Du kan skapa, söka, redigera och ta bort anteckningar. Data sparas i **LocalSto
 
 ## 🚀 Kom igång
 
-### 1. Klona projektet
+## 1. Klona projektet
 
 Kör följande kommandon i terminalen:
 
@@ -16,7 +16,7 @@ git clone https://github.com/christianeriksson06/notes-application.git
 cd notes-application
 ```
 
-### 2. Öppna i VS Code
+## 2. Öppna i VS Code
 
 Starta projektet i Visual Studio Code:
 
@@ -24,16 +24,16 @@ Starta projektet i Visual Studio Code:
 code .
 ```
 
-### 3. Starta en lokal utvecklingsserver
+## 3. Starta en lokal utvecklingsserver
 
 Eftersom vi använder ES-moduler måste appen köras via http://, inte `file://`.
 
-# Alternativ A: VS Code + Live Server
+### Alternativ A: VS Code + Live Server
 
-1. Installera extensionen Live Server i VS Code
-2. Högerklicka på `index.html` -> välj Open with Live Server
+1. Installera extensionen **Live Server** i VS Code
+2. Högerklicka på `index.html` -> välj **Open with Live Server**
 
-# Alternativ B: Python
+### Alternativ B: Python
 
 ```bash
 # Python 3
@@ -42,7 +42,7 @@ Python -m http.server 5500
 
 Öppna sedan http://localhost:5500/app/index.html
 
-# Alternativ C: Node (http-server)
+### Alternativ C: Node (http-server)
 
 ```bash
 npm install -g http-server
@@ -51,13 +51,13 @@ http-server .
 
 Öppna sedan http://localhost:8080/app/index.html
 
-### 4. Klart!
+## 4. Klart!
 
 - `index.html` -> lista + sök
 - `create.html` -> skapa ny note
 - `edit.html` -> redigera / ta bort note
 
-### 📂 Projektstruktur
+## 📂 Projektstruktur
 
 ```text
 .
@@ -76,7 +76,7 @@ http-server .
 └── README.md
 ```
 
-### 🛠️ Teknisk stack
+## 🛠️ Teknisk stack
 
 - **HTML5** (semantiska element)
 - **CSS3** (Flexbox, Grid, responsive design)
@@ -84,7 +84,7 @@ http-server .
 - **LocalStorage** för datalagring
 - Deployment: **Netlify**
 
-### ✅ Funktioner
+## ✅ Funktioner
 
 - Skapa anteckningar med titel, beskrivning, datum & tid
 - Lista anteckningar grupperade (7 dagar, 30 dagar, no date)
