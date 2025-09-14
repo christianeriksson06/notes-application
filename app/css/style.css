@@ -77,7 +77,7 @@ body {
   background: var(--accent);
   color: #fff;
   left: 50%;
-  position: fixed;
+  position: absolute;
   transform: translateX(-50%);
   right: auto;
   font-size: 25px;
