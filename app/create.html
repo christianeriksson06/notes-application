@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Create new</title>
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="index.html" class="icon-btn" aria-label="Tillbaka"> < Back</a>
+      <h1 class="app-title-create">Create new</h1>
+      <span style="width: 40px"></span>
+    </header>
+
+    <main class="notes-container">
+      <form id="createForm" class="editor-panel">
+        <fieldset class="field">
+          <input
+            id="title"
+            name="title"
+            type="text"
+            placeholder="Uppgiftsnamn"
+            required
+          />
+
+          <textarea
+            id="body"
+            name="body"
+            rows="4"
+            placeholder="Beskrivning"
+          ></textarea>
+        </fieldset>
+
+        <section class="field two">
+          <div class="control">
+            <label for="date">Datum</label>
+            <input id="date" class="input" type="date" />
+          </div>
+          <div class="control">
+            <label for="time">Tid</label>
+            <input id="time" class="input" type="time" />
+          </div>
+        </section>
+
+        <button class="primary" type="submit">Create</button>
+      </form>
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="js/create.js"></script>
+  </body>
+</html>
